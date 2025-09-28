@@ -2,7 +2,7 @@
 
 A complete machine learning system for recognizing handwritten letters (A-Z) and digits (0-9) using a Convolutional Neural Network trained on EMNIST and MNIST datasets. Features a local Tkinter drawing application for real-time prediction.
 
-## 🎯 Features
+## Features
 
 - **36-Class Recognition**: Letters A-Z and digits 0-9
 - **CNN Architecture**: Simple but effective convolutional neural network
@@ -12,7 +12,7 @@ A complete machine learning system for recognizing handwritten letters (A-Z) and
 - **Data Augmentation**: Robust training with rotation, perspective, and contrast variations
 - **Cross-Platform**: Works on macOS, Windows, and Linux
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Environment Setup
 ```bash
@@ -51,7 +51,7 @@ python tools/canvas_app_simple.py
 python tools/canvas_app.py
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 handwriting project/
@@ -72,7 +72,7 @@ handwriting project/
 └── README.md
 ```
 
-## 🧠 Model Architecture
+## Model Architecture
 
 **SimpleCNN** - A lightweight but effective architecture:
 
@@ -89,7 +89,7 @@ Input: 28×28 grayscale image
 └── Linear(256→36) → 36 classes (A-Z, 0-9)
 ```
 
-## 📊 Training Details
+## Training Details
 
 ### Datasets
 - **EMNIST Letters**: A-Z (both uppercase and lowercase, case-collapsed)
@@ -113,7 +113,7 @@ Input: 28×28 grayscale image
 - **Loss Function**: CrossEntropyLoss with label smoothing
 - **Regularization**: Weight decay, gradient clipping, dropout
 
-## 🎨 Using the Drawing App
+## Using the Drawing App
 
 1. **Launch**: Run `python tools/canvas_app_simple.py`
 2. **Reference**: Check the `emnist_*.png` files to see the exact writing style the model learned
@@ -122,7 +122,7 @@ Input: 28×28 grayscale image
 5. **Clear**: Click "Clear" to start over
 6. **Visualize**: Use `python tools/show_all_emnist_characters.py` to generate fresh training examples
 
-## 🔧 Advanced Usage
+## Advanced Usage
 
 ### Custom Training
 ```bash
@@ -154,7 +154,7 @@ print('Model loaded successfully')
 python tools/show_all_emnist_characters.py
 ```
 
-## 📈 Performance
+## Performance
 
 - **Training Time**: ~5-10 minutes on modern hardware
 - **Model Size**: ~2MB (TorchScript)
@@ -162,7 +162,7 @@ python tools/show_all_emnist_characters.py
 - **Accuracy**: ~92% on test set
 - **Device Support**: CPU, CUDA, Apple MPS
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -187,7 +187,7 @@ python -m ml.train --batch-size 64
 - Use `python tools/show_all_emnist_characters.py` to generate training examples
 - The model expects clean, standardized characters similar to the EMNIST dataset
 
-## 📚 Technical Details
+## Technical Details
 
 ### Data Preprocessing
 - **Normalization**: MNIST mean (0.1307) and std (0.3081)
@@ -199,7 +199,7 @@ python -m ml.train --batch-size 64
 - **Optimization**: JIT compilation for performance
 - **Compatibility**: Cross-platform model loading
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -207,11 +207,11 @@ python -m ml.train --batch-size 64
 4. Test thoroughly
 5. Submit a pull request
 
-## 📄 License
+## License
 
 MIT License - see LICENSE file for details
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **EMNIST Dataset**: Extended MNIST by Cohen et al.
 - **MNIST Dataset**: Classic handwritten digits dataset
